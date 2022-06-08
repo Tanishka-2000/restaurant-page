@@ -1,2 +1,6 @@
 import createHomePage from './home.js';
-createHomePage();
+import createMenuPage from './menu.js'
+
+const content = document.querySelector('.content');
+// createHomePage(content);
+createMenuPage(content);

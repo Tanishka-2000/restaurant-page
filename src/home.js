@@ -1,5 +1,4 @@
-export default function createHomePage(){
-const content = document.querySelector('.content');
+export default function createHomePage(content){
 
 let container = document.createElement('div');
 container.classList.add('home-container');

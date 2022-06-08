@@ -11,21 +11,44 @@ body{
 .content{
     width: 100vw;
     height: 100vh;
-    background-image: url('images/home-background.jpg');
-    background-size: 100%;
-}
 
+}
+/* navbar */
+nav{
+    width: 100vw;
+    position: fixed;
+    color: #ccc;
+    padding: 20px 200px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+nav .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+nav .links div:hover{
+    color: #fff;
+}
+nav .logo{
+    font-size: 2.5rem;
+    color: #fff;
+}
 /* home page */
 .home-container{
+    background-image: url('images/home-background.jpg');
+    background-size: 100vw;
     width: 100vw;
     height: 100vh;
+    padding-right: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 50px;
 }
 .home-details{
-    width: 800px;
+    width: 40vw;
     color: #ccc;
     font-size: 2.5rem;
 }
@@ -34,4 +57,129 @@ body{
 }
 .home-details p{
     font-weight: 300;
+}
+
+/* menu page */
+.menu-tab{
+    padding: 100px;
+}
+.menu-tab>h1{
+    color: #ccc;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.drinks,.breakfast,.dinner,.dessert,.lunch{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,500px);
+    grid-auto-rows: 500px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+.drinks>div,.breakfast>div,.dinner>div,.dessert>div,.lunch>div{
+    background-color: #999;
+    color: #fff;
+    background-size: 100% 100%;
+}
+/* setting images as background */
+
+/* drinks */
+.drinks>div:nth-of-type(1){
+    background-image: url('images/drinks/image1.jpg');
+}
+.drinks>div:nth-of-type(2){
+    background-image: url('images/drinks/image2.jpg');
+}
+.drinks>div:nth-of-type(3){
+    background-image: url('images/drinks/image3.jpg');
+}
+.drinks>div:nth-of-type(4){
+    background-image: url('images/drinks/image4.jpg');
+}
+.drinks>div:nth-of-type(5){
+    background-image: url('images/drinks/image5.jpg');
+}
+.drinks>div:nth-of-type(6){
+    background-image: url('images/drinks/image6.jpg');
+}
+
+/* breakfast */
+.breakfast>div:nth-of-type(1){
+    background-image: url('images/breakfast/image1.jpg');
+}
+.breakfast>div:nth-of-type(2){
+    background-image: url('images/breakfast/image2.jpg');
+}
+.breakfast>div:nth-of-type(3){
+    background-image: url('images/breakfast/image3.jpg');
+}
+.breakfast>div:nth-of-type(4){
+    background-image: url('images/breakfast/image4.jpg');
+}
+.breakfast>div:nth-of-type(5){
+    background-image: url('images/breakfast/image5.jpg');
+}
+.breakfast>div:nth-of-type(6){
+    background-image: url('images/breakfast/image6.jpg');
+}
+
+/* lunch */
+.lunch>div:nth-of-type(1){
+    background-image: url('images/lunch/image1.jpg');
+}
+.lunch>div:nth-of-type(2){
+    background-image: url('images/lunch/image2.jpg');
+}
+.lunch>div:nth-of-type(3){
+    background-image: url('images/lunch/image3.jpg');
+}
+.lunch>div:nth-of-type(4){
+    background-image: url('images/lunch/image4.jpg');
+}
+.lunch>div:nth-of-type(5){
+    background-image: url('images/lunch/image5.jpg');
+}
+.lunch>div:nth-of-type(6){
+    background-image: url('images/lunch/image6.jpg');
+}
+
+/* dinner */
+.dinner>div:nth-of-type(1){
+    background-image: url('images/dinner/image1.jpg');
+}
+.dinner>div:nth-of-type(2){
+    background-image: url('images/dinner/image2.jpg');
+}
+.dinner>div:nth-of-type(3){
+    background-image: url('images/dinner/image3.jpg');
+}
+.dinner>div:nth-of-type(4){
+    background-image: url('images/dinner/image4.jpg');
+}
+.dinner>div:nth-of-type(5){
+    background-image: url('images/dinner/image5.jpg');
+}
+.dinner>div:nth-of-type(6){
+    background-image: url('images/dinner/image6.jpg');
+}
+
+/* dessert */
+.dessert>div:nth-of-type(1){
+    background-image: url('images/dessert/image1.jpg');
+}
+.dessert>div:nth-of-type(2){
+    background-image: url('images/dessert/image2.jpg');
+}
+.dessert>div:nth-of-type(3){
+    background-image: url('images/dessert/image3.jpg');
+}
+.dessert>div:nth-of-type(4){
+    background-image: url('images/dessert/image4.jpg');
+}
+.dessert>div:nth-of-type(5){
+    background-image: url('images/dessert/image5.jpg');
+}
+.dessert>div:nth-of-type(6){
+    background-image: url('images/dessert/image6.jpg');
 }
