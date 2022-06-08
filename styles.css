@@ -64,7 +64,7 @@ nav .logo{
     padding: 100px;
 }
 .menu-tab>h1{
-    color: #ccc;
+    color: #aaa;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 10px;
@@ -81,7 +81,26 @@ nav .logo{
     background-color: #999;
     color: #fff;
     background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.menu-tab button{
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 10px;
+    transition: .5s;
+}
+.menu-tab button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
 /* setting images as background */
 
 /* drinks */
