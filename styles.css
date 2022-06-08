@@ -62,15 +62,16 @@ nav .logo{
 /* menu page */
 .menu-tab{
     padding: 100px;
+    background-color: #000;
 }
 .menu-tab>h1{
-    color: #aaa;
-    font-size: 3rem;
+    color: #fff    ;
+    font-size: 4rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .drinks,.breakfast,.dinner,.dessert,.lunch{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3,500px);
     grid-auto-rows: 500px;
@@ -81,9 +82,10 @@ nav .logo{
     background-color: #999;
     color: #fff;
     background-size: 100% 100%;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 .menu-tab button{
     outline: none;
@@ -99,7 +101,9 @@ nav .logo{
     background-color: #fff;
     color: #000;
 }
-
+.menu-tab p{
+    font-size: 2rem;
+}
 
 /* setting images as background */
 
@@ -201,4 +205,54 @@ nav .logo{
 }
 .dessert>div:nth-of-type(6){
     background-image: url('images/dessert/image6.jpg');
+}
+
+/* contact */
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/formBackground.jpg');
+    background-size: 100%;
+    color: #ccc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.7rem;
+}
+.contact h1{
+    margin-bottom: 80px;
+}
+form>div{
+    position: relative;
+}
+label{
+    position:absolute;
+    font-size: 2rem;
+    color: #aaa;
+    left: 0;
+}
+input{
+    width: 500px;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: #ccc;
+    outline: none;
+    margin-bottom: 30px;
+}
+input:not(:placeholder-shown) + label{
+    display: none;
+}
+form button{
+    width: 200px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
 }
