@@ -14,6 +14,11 @@ export default function createMenuPage(content){
 
         for (let i = 0; i < 6; i++) {
             let div = document.createElement('div');
+
+            let button = document.createElement('button');
+            button.textContent = 'Order 5$';
+            div.appendChild(button);
+            
             temp.appendChild(div);
         }
         menuTab.appendChild(temp);
