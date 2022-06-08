@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createContactPage)\n/* harmony export */ });\nfunction createContactPage(content){\r\n    let contact = document.createElement('div');\r\n    contact.classList.add('contact');\r\n\r\n    let details = document.createElement('div');\r\n    details.classList.add('details');\r\n\r\n    let heading = document.createElement('h1');\r\n    heading.appendChild(document.createTextNode('Wanna book us for reception...'));\r\n    details.appendChild(heading);\r\n\r\n    let form = document.createElement('form');\r\n    let type = ['text', 'tel', 'text'];\r\n    let labelContent = ['Name','Contact no.','Occupation'];\r\n\r\n    for (let i = 0; i < 3; i++) {\r\n\r\n        let div = document.createElement('div');\r\n\r\n        let input = document.createElement('input');\r\n        input.setAttribute('type',type[i]);\r\n        input.setAttribute('placeholder',' ');\r\n        div.appendChild(input);\r\n\r\n        let label = document.createElement('label');\r\n        label.appendChild(document.createTextNode(labelContent[i]));\r\n        div.appendChild(label);\r\n\r\n        form.appendChild(div);\r\n    }\r\n    let sendBtn = document.createElement('button');\r\n    sendBtn.textContent = 'Send';\r\n    form.appendChild(sendBtn);\r\n\r\n    details.appendChild(form);\r\n\r\n    let para = document.createElement('p');\r\n    para.appendChild(document.createTextNode('Or contact us at '));\r\n\r\n    const iconArray = ['ri-facebook-fill','ri-instagram-fill','ri-twitter-fill'];\r\n    for (let i = 0; i < 3; i++) {\r\n        let icon = document.createElement('i');\r\n        icon.classList.add(iconArray[i]);\r\n        para.appendChild(icon);\r\n    }\r\n    details.appendChild(para);\r\n\r\n    contact.appendChild(details);\r\n    content.appendChild(contact);\r\n\r\n}\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n\r\n\r\n\r\nconst content = document.querySelector('.content');\r\n// createHomePage(content);\r\n(0,_menu_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(content);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n\r\n\r\n\r\n\r\nconst content = document.querySelector('.content');\r\n// createHomePage(content);\r\n//createMenuPage(content);\r\n(0,_contact_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(content);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenuPage)\n/* harmony export */ });\nfunction createMenuPage(content){\r\n    const menuArray = ['Drinks','Breakfast','Lunch','Dinner','Dessert'];\r\n\r\n    let menuTab = document.createElement('div');\r\n    menuTab.classList.add('menu-tab');\r\n\r\n    for (let i = 0; i < 5; i++) {\r\n        let heading = document.createElement('h1');\r\n        heading.appendChild(document.createTextNode(menuArray[i]));\r\n        menuTab.appendChild(heading);\r\n\r\n        let temp = document.createElement('div');\r\n        temp.classList.add(menuArray[i].toLowerCase());\r\n\r\n        for (let i = 0; i < 6; i++) {\r\n            let div = document.createElement('div');\r\n\r\n            let button = document.createElement('button');\r\n            button.textContent = 'Order 5$';\r\n            div.appendChild(button);\r\n            \r\n            temp.appendChild(div);\r\n        }\r\n        menuTab.appendChild(temp);\r\n    }\r\n     content.appendChild(menuTab);\r\n}\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenuPage)\n/* harmony export */ });\nfunction createMenuPage(content){\r\n    const menuArray = ['Drinks','Breakfast','Lunch','Dinner','Dessert'];\r\n\r\n    let menuTab = document.createElement('div');\r\n    menuTab.classList.add('menu-tab');\r\n\r\n    for (let i = 0; i < 5; i++) {\r\n        let heading = document.createElement('h1');\r\n        heading.appendChild(document.createTextNode(menuArray[i]));\r\n        menuTab.appendChild(heading);\r\n\r\n        let temp = document.createElement('div');\r\n        temp.classList.add(menuArray[i].toLowerCase());\r\n\r\n        for (let i = 0; i < 6; i++) {\r\n            let div = document.createElement('div');\r\n\r\n            let price = document.createElement('p');\r\n            price.appendChild(document.createTextNode('Price: 5$'));\r\n            div.appendChild(price);\r\n\r\n            let button = document.createElement('button');\r\n            button.textContent = 'Order 5$';\r\n            div.appendChild(button);\r\n\r\n            temp.appendChild(div);\r\n        }\r\n        menuTab.appendChild(temp);\r\n    }\r\n     content.appendChild(menuTab);\r\n}\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ })
 
