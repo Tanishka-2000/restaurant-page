@@ -12,17 +12,25 @@ export default function createMenuPage(content){
         let temp = document.createElement('div');
         temp.classList.add(menuArray[i].toLowerCase());
 
-        for (let i = 0; i < 6; i++) {
+        for (let j = 0; j < 6; j++) {
             let div = document.createElement('div');
+
+            let image = document.createElement('img');
+            image.setAttribute('src', `./images/${menuArray[i].toLowerCase()}/image${j+1}.jpg`);
+            div.appendChild(image);
+
+            let btnGroup = document.createElement('div');
+            btnGroup.classList.add('btn-group');
 
             let price = document.createElement('p');
             price.appendChild(document.createTextNode('Price: 5$'));
-            div.appendChild(price);
+            btnGroup.appendChild(price);
 
             let button = document.createElement('button');
             button.textContent = 'Order 5$';
-            div.appendChild(button);
+            btnGroup.appendChild(button);
 
+            div.appendChild(btnGroup);
             temp.appendChild(div);
         }
         menuTab.appendChild(temp);

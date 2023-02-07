@@ -11,18 +11,21 @@ export default function createContactPage(content){
 
     let form = document.createElement('form');
     let type = ['text', 'tel', 'text'];
-    let labelContent = ['Name','Contact no.','Occupation'];
+    let ids = ['name', 'contact', 'occassion']
+    let labelContent = ['Name','Contact no.','Occassion'];
 
     for (let i = 0; i < 3; i++) {
 
         let div = document.createElement('div');
 
         let input = document.createElement('input');
-        input.setAttribute('type',type[i]);
-        input.setAttribute('placeholder',' ');
+        input.setAttribute('type', type[i]);
+        input.setAttribute('placeholder', ' ');
+        input.setAttribute('id', ids[i]);
         div.appendChild(input);
 
         let label = document.createElement('label');
+        label.setAttribute('for', ids[i]);
         label.appendChild(document.createTextNode(labelContent[i]));
         div.appendChild(label);
 

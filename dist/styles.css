@@ -91,8 +91,9 @@ nav .logo{
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3,300px);
-    grid-auto-rows: 300px;
-    grid-gap: 10px;
+    grid-auto-rows: 350px;
+    column-gap: 15px;
+    row-gap: 40px;
     justify-content: center;
 }
 
@@ -101,28 +102,35 @@ nav .logo{
 .dinner>div,
 .dessert>div,
 .lunch>div{
-    background-color: #999;
+    /* background-color: #999; */
     color: #fff;
     background-size: 100% 100%;
-    padding: 20px;
-    display: flex;
+    /* padding: 20px; */
+    /* display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-end; */
     background-size: cover;
     background-position: center;
-    /* filter: opacity(.8) ; */
 }
-.menu-tab > div > div:hover{
-    /* background-color: rgba(0,0,0,.3); */
-    /* -webkit-backdrop-filter: blur(5px); */
-    /* filter: blur(2px); */
+.menu-tab > div > div > img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
+
+.menu-tab > div > div > .btn-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menu-tab button{
     outline: none;
     border: 1px solid #fff;
     border-radius: 10px;
     color: #fff;
-    background-color: rgba(0,0,0,.3);
+    background-color: transparent;
     font-size: 1.5rem;
     padding: 10px;
     transition: .5s;
@@ -135,116 +143,15 @@ nav .logo{
     font-size: 1.5rem;
 }
 
-/* setting images as background */
-
-/* drinks */
-.drinks>div:nth-of-type(1){
-    background-image: url('images/drinks/image1.jpg');
-}
-.drinks>div:nth-of-type(2){
-    background-image: url('images/drinks/image2.jpg');
-}
-.drinks>div:nth-of-type(3){
-    background-image: url('images/drinks/image3.jpg');
-}
-.drinks>div:nth-of-type(4){
-    background-image: url('images/drinks/image4.jpg');
-}
-.drinks>div:nth-of-type(5){
-    background-image: url('images/drinks/image5.jpg');
-}
-.drinks>div:nth-of-type(6){
-    background-image: url('images/drinks/image6.jpg');
-}
-
-/* breakfast */
-.breakfast>div:nth-of-type(1){
-    background-image: url('images/breakfast/image1.jpg');
-}
-.breakfast>div:nth-of-type(2){
-    background-image: url('images/breakfast/image2.jpg');
-}
-.breakfast>div:nth-of-type(3){
-    background-image: url('images/breakfast/image3.jpg');
-}
-.breakfast>div:nth-of-type(4){
-    background-image: url('images/breakfast/image4.jpg');
-}
-.breakfast>div:nth-of-type(5){
-    background-image: url('images/breakfast/image5.jpg');
-}
-.breakfast>div:nth-of-type(6){
-    background-image: url('images/breakfast/image6.jpg');
-}
-
-/* lunch */
-.lunch>div:nth-of-type(1){
-    background-image: url('images/lunch/image1.jpg');
-}
-.lunch>div:nth-of-type(2){
-    background-image: url('images/lunch/image2.jpg');
-}
-.lunch>div:nth-of-type(3){
-    background-image: url('images/lunch/image3.jpg');
-}
-.lunch>div:nth-of-type(4){
-    background-image: url('images/lunch/image4.jpg');
-}
-.lunch>div:nth-of-type(5){
-    background-image: url('images/lunch/image5.jpg');
-}
-.lunch>div:nth-of-type(6){
-    background-image: url('images/lunch/image6.jpg');
-}
-
-/* dinner */
-.dinner>div:nth-of-type(1){
-    background-image: url('images/dinner/image1.jpg');
-}
-.dinner>div:nth-of-type(2){
-    background-image: url('images/dinner/image2.jpg');
-}
-.dinner>div:nth-of-type(3){
-    background-image: url('images/dinner/image3.jpg');
-}
-.dinner>div:nth-of-type(4){
-    background-image: url('images/dinner/image4.jpg');
-}
-.dinner>div:nth-of-type(5){
-    background-image: url('images/dinner/image5.jpg');
-}
-.dinner>div:nth-of-type(6){
-    background-image: url('images/dinner/image6.jpg');
-}
-
-/* dessert */
-.dessert>div:nth-of-type(1){
-    background-image: url('images/dessert/image1.jpg');
-}
-.dessert>div:nth-of-type(2){
-    background-image: url('images/dessert/image2.jpg');
-}
-.dessert>div:nth-of-type(3){
-    background-image: url('images/dessert/image3.jpg');
-}
-.dessert>div:nth-of-type(4){
-    background-image: url('images/dessert/image4.jpg');
-}
-.dessert>div:nth-of-type(5){
-    background-image: url('images/dessert/image5.jpg');
-}
-.dessert>div:nth-of-type(6){
-    background-image: url('images/dessert/image6.jpg');
-}
-
 /* contact */
 
 .contact{
     width: 100vw;
     height: 100vh;
     background-image: url('images/formBackground.jpg');
-    background-size: 100%;
-    color: #ccc;
+    background-size: cover;
+    background-position: center;
+    color: #eee;
     display: flex;
     justify-content: flex-end;
     align-items: center;
