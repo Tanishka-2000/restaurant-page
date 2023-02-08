@@ -7,7 +7,7 @@ let details = document.createElement('div');
 details.classList.add('home-details');
 
 let heading = document.createElement('h1');
-heading.appendChild(document.createTextNode('"Glorious Food"'));
+heading.appendChild(document.createTextNode('"Restaurant Bistro"'));
 details.appendChild(heading);
 
 let description = document.createElement('p');
