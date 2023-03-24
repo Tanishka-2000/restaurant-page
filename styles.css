@@ -81,6 +81,7 @@ nav .logo{
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
 }
 
 .drinks,
